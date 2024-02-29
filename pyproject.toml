@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "diceware-cli"
-version = "1"
+name = "secretsnake"
+version = "1.0"
 authors = [{name="Lin Mackay", email="lin@ml1n.net"}]
 description = "Simple command-line diceware tool."
 readme = "README.md"
@@ -13,7 +13,7 @@ readme = "README.md"
 where = ["src"]
 
 [tool.setuptools.package-data]
-dicewarecli = ["src/dicewarecli/*.wordlist"]
+secretsnake = ["src/secretsnake/*.wordlist"]
 
 [project.scripts]
-diceware = "dicewarecli.dicewarecli:main"
+secretsnake = "secretsnake.parser:main"

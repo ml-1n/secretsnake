@@ -1,3 +1,4 @@
 venv
 dist
-diceware_cli.egg-info
+src/secretsnake.egg-info
+src/secretsnake/__pycache__
