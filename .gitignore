@@ -1,4 +1,5 @@
 venv
 dist
+.vscode
 src/secretsnake.egg-info
 src/secretsnake/__pycache__

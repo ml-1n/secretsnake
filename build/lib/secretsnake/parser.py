@@ -26,10 +26,12 @@ def main():
         log('')
 
         if len(passphrase) < 19:
-            log('Warning: Passphrase is less than 19 characters long. Entropy may be sigificantly lower than needed.')
+            print('Warning: Passphrase is less than 19 characters long. Entropy may be sigificantly lower than needed.')
 
-    log('Passphrase: ' + passphrase)
+    log('Passphrase: ', end='')
     print(passphrase)
+
+    sys.ou
 
         
 def get_args():
@@ -94,7 +96,6 @@ def load_word_file(word_file):
             word_list.append(x[0])     
     
     return word_list
-
 
 def log(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
